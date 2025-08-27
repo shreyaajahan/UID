@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "user-profile",
-=======
-  "name": "my-client-website",
->>>>>>> 1f031f3ba228f2e1f6d1dcda589c6e54acd40eb0
   "version": "0.1.0",
   "private": true,
   "dependencies": {

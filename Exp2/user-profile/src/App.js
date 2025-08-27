@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useRef, useState } from "react";
 import "./App.css";
 import UserProfile from "./UserProfile";
@@ -41,26 +40,6 @@ function App() {
       ) : (
         <UserProfile {...profile} />
       )}
-=======
-import React, { useState } from "react";
-import Navbar from "./Navbar";
-import Home from "./Home";
-import About from "./About";
-import Contact from "./Contact";
-import "./App.css";
-
-function App() {
-  const [page, setPage] = useState("home"); // default page
-
-  return (
-    <div className="App">
-      <Navbar setPage={setPage} />
-      <div className="page-container">
-        {page === "home" && <Home />}
-        {page === "about" && <About />}
-        {page === "contact" && <Contact />}
-      </div>
->>>>>>> 1f031f3ba228f2e1f6d1dcda589c6e54acd40eb0
     </div>
   );
 }
