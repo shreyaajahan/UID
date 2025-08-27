@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+/* General Reset */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  /* Gradient background */
+  background: linear-gradient(135deg, #e0f7fa, #e3f2fd, #f3e5f5);
+  background-attachment: fixed;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navbar */
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: rgba(0, 119, 204, 0.95);
+  padding: 15px 20px;
   color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: #ffdd57;
+}
+
+/* Page container */
+.page-container {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+/* Page card */
+.page {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Page content */
+.page h1 {
+  color: #0077cc;
+  margin-bottom: 15px;
+}
+
+.page h2 {
+  margin-top: 25px;
+  color: #444;
+}
+
+.page p {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.page ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.page ul li {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+/* Contact section styling */
+.page strong {
+  color: #0077cc;
+}
+
+/* Footer (optional if added later) */
+.footer {
+  background: rgba(0, 119, 204, 0.95);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
